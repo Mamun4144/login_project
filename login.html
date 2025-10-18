@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+    body {
+        background: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+    .login-card {
+        background: #fff;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+    h2 { text-align: center; margin-bottom: 25px; }
+    input { width: 100%; padding: 10px; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc; }
+    button { width: 100%; padding: 12px; border: none; border-radius: 6px; background: #007bff; color: #fff; font-size: 18px; cursor: pointer; }
+    button:hover { background: #0056b3; }
+</style>
+</head>
+<body>
+<div class="login-card">
+    <h2>Login</h2>
+    <form action="login_check.php" method="POST">
+        <input type="text" name="UserName" placeholder="User Name" required>
+        <input type="password" name="Password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>
